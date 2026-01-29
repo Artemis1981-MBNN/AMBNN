@@ -45,7 +45,9 @@ spark.neuralnet.serializer=org.apache.spark.serializer.KryoSerializer
 
 # Track configuration version with commit SHA
 spark.neuralnet.config.version=1.0.0
+# Initial placeholder - will be updated with actual commit SHA during deployment
 spark.neuralnet.config.sha=initial
 
 # Repository SHA tracking for neural network integration
+# HEAD is a placeholder - replace with actual commit SHA to pin to a specific version
 spark.neuralnet.repository.sha=HEAD

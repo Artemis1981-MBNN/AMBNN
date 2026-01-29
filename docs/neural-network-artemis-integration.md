@@ -93,7 +93,7 @@ artemis.data.sync.frequency=300
 artemis.data.sync.protocol=ssh
 
 # Neural network coordination
-artemis.neuralnet.coordination=enabled
+artemis.neuralnet.coordination=true
 artemis.neuralnet.dataflow=bidirectional
 
 # SSH authentication
@@ -144,7 +144,10 @@ First, set up the configuration files:
 cp conf/neural-network.conf.template conf/neural-network.conf
 cp conf/artemis-integration.properties.template conf/artemis-integration.properties
 
-# Edit configurations as needed (e.g., update SSH keys, SHA values)
+# Edit configurations as needed:
+# - Update artemis.ssh.key.path to point to your SSH private key
+# - Replace HEAD with actual commit SHAs if you want to pin to specific versions
+# - Customize repository URLs if using a fork
 ```
 
 Then run the example:

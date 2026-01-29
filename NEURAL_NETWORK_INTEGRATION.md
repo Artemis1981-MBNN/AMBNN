@@ -18,7 +18,8 @@ This repository provides configuration templates and examples for using Apache S
    Copy the neural network configuration template:
    ```bash
    cp conf/neural-network.conf.template conf/neural-network.conf
-   # Optionally merge with spark-defaults.conf
+   # Review both files before merging to avoid duplicate configurations
+   # Then optionally append to spark-defaults.conf:
    cat conf/neural-network.conf >> conf/spark-defaults.conf
    ```
 
